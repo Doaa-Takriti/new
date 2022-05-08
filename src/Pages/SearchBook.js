@@ -87,31 +87,13 @@ function SearchBook() {
 
                                 else {
                                     const searchText = value?.volumeInfo?.title;
-                                    const searchBlock = value?.volumeInfo?.industryIdentifiers;
 
-                                    if (searchText.toLowerCase().includes(searchTitle.toLowerCase())) {
+                                    if (searchText?.toLowerCase().includes(searchTitle.toLowerCase())) {
                                         return value;
                                     }
 
 
-                                    else {
-                                        let test = null;
-                                        searchBlock.forEach((obj) => {
-                                            if (obj.type && obj.type.toLowerCase().includes(searchTitle.toLowerCase())) {
-                                                test = true;
-                                                return test;
-                                            }
 
-                                        });
-
-
-                                        if (test) {
-                                            return value;
-
-                                        }
-
-
-                                    }
 
 
                                 }

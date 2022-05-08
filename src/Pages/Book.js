@@ -151,11 +151,13 @@ function Book() {
                                 <div>
 
                                     <div className='d-flex' style={{ justifyContent: 'space-between', alignItems: 'center' }}>
-                                        <span style={{ fontSize: '35px', fontWeight: 'bold', color: '#457475' }}>يافا حكاية غياب ومطر</span>
+                                        <span style={{ fontSize: '35px', fontWeight: 'bold', color: '#457475' }}>    {post?.volumeInfo?.title}
+                                        </span>
                                         <span style={{ color: '#457475', textDecoration: 'underline' }}>روايات عربية</span>
                                     </div>
                                     <br />
-                                    <p style={{ color: 'black' }}>نبال قندس</p>
+                                    <p style={{ color: 'black' }}>                                        {post?.volumeInfo?.authors[0]}
+                                    </p>
                                     <br />
                                     <p style={{ color: 'gray' }}
                                         data-aos="fade-zoom-in"
